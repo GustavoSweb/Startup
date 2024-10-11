@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+#shadowButton {
+  box-shadow: inset 0px 0px 10px 1px #ffffff60;
+}
+@media (max-width: 500px) {
+  .default {
+    opacity: 0%;
+    overflow: hidden;
+    visibility: hidden;
+    position: fixed;
+    z-index: 4;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.active {
+  opacity: 100%;
+  visibility: visible;
+}
+#MenuMobile {
+  border: none;
+  border-top: 3px solid white;
+  cursor: pointer;
+}
+#MenuMobile::after,
+#MenuMobile::before {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+.titulo {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 82px;
+  line-height: 98.4px;
+  letter-spacing: -5.06%;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #ffffff 55%, #b372cf);
+
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: white;
+}

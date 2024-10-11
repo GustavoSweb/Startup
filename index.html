@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+           'inter': ['Inter', 'system-ui', ...]
+          },
+          extend: {
+            colors: {
+              PrimaryPurple: "#602A9A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black relative">
+    <header
+      class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center"
+    >
+      <div>
+        <img src="./public/image/Logo.png" alt="" />
+      </div>
+      <ul
+        class="hidden md:flex text-[#908F91] py-[8px] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center rounded-[30px] mx-[74px]"
+      >
+        <li><button>Features</button></li>
+        <li><button>Developers</button></li>
+        <li><button>Company</button></li>
+        <li><button>Blog</button></li>
+        <li><button>Changelog</button></li>
+      </ul>
+      <div class="flex items-center">
+        <div class="p-[5px] border-[1px] border-[#FFFFFF25] rounded-xl">
+          <button
+            id="shadowButton"
+            class="px-[20px] py-[5px] text-[17px] text-white rounded-xl bg-[#391C67]"
+          >
+            Join waitlis
+          </button>
+        </div>
+        <div class="ml-[15px] flex items-center md:hidden">
+          <button id="MenuMobile"></button>
+        </div>
+      </div>
+    </header>
+    <ul
+      class="default hidden text-[#908F91] py-[8px] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center"
+      id="MenuLinks"
+    >
+      <li>Features</li>
+      <li>Developers</li>
+      <li>Company</li>
+      <li>Blog</li>
+      <li>Changelog</li>
+    </ul>
+
+    <section
+      class="h-dvh flex flex-col content-center items-center justify-center flex-wrap gap-[10px]"
+    >
+      <div
+        class="bg-[#000000] flex flex-wrap items-center justify-center border-[1px] border-solid border-[#262626] rounded-[50px] px-[14px] py-[8px] gap-[7px]"
+      >
+        <h3
+          class="uppercase bg-[#9855FF] rounded-[40px] py-[2px] px-[10px] gap-[10px] text-[#000000] font-inter leanding-[26px] tracking-[-0,01%] text-[10pt] font-[700]"
+        >
+          new
+        </h3>
+        <h3
+          class="text-[16px] font-[400] block leanding-[26px] tracking-[-0,01%] font-inter text-[#9855FF]"
+        >
+          Latest integration just arrived
+        </h3>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-[16px]">
+        <h1 class="titulo">
+          Boost your<br />
+          rankings with AI.
+        </h1>
+      </div>
+    </section>
+    <main></main>
+    <footer></footer>
+    <script src="./public/js/menu.js"></script>
+  </body>
+</html>
