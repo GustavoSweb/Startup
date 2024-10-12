@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+.animationMain {
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  animation: animationNew 1s 0.2s forwards;
+}
+.initAnimation {
+  opacity: 0%;
+  transform: translateY(-30px);
+  animation: initAnimation 1s 0.2s forwards;
+}
+.initAnimationInverse {
+  opacity: 0%;
+  transform: translateY(30px);
+  animation: initAnimationInverse 1s 0.2s forwards;
+}
+@keyframes initAnimation {
+  0% {
+    opacity: 0%;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 100%;
+
+    transform: translateY(0px);
+  }
+}
+@keyframes initAnimationInverse {
+  0% {
+    opacity: 0%;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 100%;
+
+    transform: translateY(0px);
+  }
+}
+@keyframes animationNew {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 210px;
+    height: 22px;
+  }
+}
 #shadowButton {
   box-shadow: inset 0px 0px 10px 1px #ffffff60;
 }
@@ -19,6 +67,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .titulo {
+    font-size: 48px !important;
+    line-height: 52px !important;
   }
 }
 .active {
