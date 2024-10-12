@@ -23,7 +23,7 @@
   </head>
   <body class="bg-black relative">
     <header
-      class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center"
+      class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center top-0"
     >
       <div>
         <img src="./public/image/Logo.png" alt="" />
@@ -52,7 +52,7 @@
       </div>
     </header>
     <ul
-      class="default hidden text-[#908F91] py-[8px] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center"
+      class="default hidden text-[#908F91] py-[8px] duration-[0.8s] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center"
       id="MenuLinks"
     >
       <li>Features</li>
@@ -63,7 +63,7 @@
     </ul>
 
     <section
-      class="h-dvh flex flex-col content-center items-center justify-center flex-wrap gap-[10px]"
+      class="pt-[150px] flex-col flex content-center items-center justify-center gap-[10px] bg-gradient-to-t from-[#000000] to-30% to-[#00000000]"
     >
       <div
         class="bg-[#000000] flex flex-wrap items-center justify-center border-[1px] border-solid border-[#262626] rounded-[50px] px-[14px] py-[8px] gap-[7px]"
@@ -74,17 +74,49 @@
           new
         </h3>
         <h3
-          class="text-[16px] font-[400] block leanding-[26px] tracking-[-0,01%] font-inter text-[#9855FF]"
+          class="text-[16px] font-[400] block leanding-[26px] tracking-[-0,01%] font-inter text-[#9855FF] animationMain"
         >
           Latest integration just arrived
         </h3>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-[16px]">
+      <div
+        class="flex flex-wrap flex-col items-center justify-center gap-[16px]"
+      >
         <h1 class="titulo">
           Boost your<br />
           rankings with AI.
         </h1>
+        <p
+          class="font-inter text-white font-[400] text-[20px] leanding-[31px] tracking-[-0.01%] text-center"
+        >
+          Elevate your site’s visibility effortlessly with AI, where<br />smart
+          technology meets user-friendly SEO tools.
+        </p>
+        <div class="border-[1px] border-[#FFFFFF10] p-[10px] rounded-xl">
+          <button
+            class="font-inter font-[500] text-[15px] leanding-[31px] tracking-[-1.01%] text-black text-center bg-white rounded-[8px] py-[5px] px-[15px] gap-[8px]"
+          >
+            Start for free
+          </button>
+        </div>
       </div>
+      <div
+        class="flex flex-col flex-wrap items-center justify-center mt-[45px] relative"
+      >
+        <img
+          src="./public/image/backgroundSessionMain.png"
+          alt=""
+          height="793.24px"
+          width="1098px"
+          class="roudend-[8px] z-[-5] shadow-[0_-20px_70px_#8C45FF99]"
+        />
+      </div>
+      <div
+        class="absolute h-[825px] w-[825px] left-center bottom-[75px] blur-[200px] bg-[#602A9A] z-[-10] rounded-[50%]"
+      ></div>
+      <div
+        class="absolute h-[569px] w-[569px] left-center bottom-[0] blur-[200px] bg-[#602A9A] z-[-11] rounded-[50%]"
+      ></div>
     </section>
     <main></main>
     <footer></footer>

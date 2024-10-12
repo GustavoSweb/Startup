@@ -29,8 +29,28 @@
   border: none;
   border-top: 3px solid white;
   cursor: pointer;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
 }
-#MenuMobile::after,
+.menuOnAnimation {
+  border: none !important;
+}
+.menuOnAnimation::after {
+  transform: rotate(45deg) translateY(-5px) !important;
+}
+.menuOnAnimation::before {
+  transform: rotate(-45deg) translateY(5px) !important;
+}
+#MenuMobile::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
+}
 #MenuMobile::before {
   content: "";
   display: block;
@@ -38,6 +58,8 @@
   width: 30px;
   height: 3px;
   background-color: white;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
 }
 .titulo {
   font-family: inter;
