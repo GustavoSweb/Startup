@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="./public/css/style.css" />
     <script>
       tailwind.config = {
@@ -21,7 +22,7 @@
       };
     </script>
   </head>
-  <body class="bg-black relative">
+  <body class="bg-black relative overflow-x-hidden">
     <header
       class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center top-0"
     >
@@ -63,7 +64,7 @@
     </ul>
     <main>
       <section
-        class="px-[10px] md:px-0 pt-[150px] flex-col flex content-center items-center justify-center gap-[10px] bg-gradient-to-t from-[#000000] to-30% to-[#00000000]"
+        class="px-[10px] relative  md:px-0 pt-[150px] flex-col flex content-center items-center justify-center gap-[10px] overflow-x-hidden overflow-y-hidden bg-gradient-to-t from-[#000000] to-30% to-[#00000000]"
       >
         <div
           class="bg-[#000000] flex flex-wrap items-center justify-center border-[1px] border-solid border-[#262626] rounded-[50px] px-[14px] py-[8px] gap-[7px]"
@@ -113,7 +114,7 @@
           />
         </div>
         <div
-          class="hidden md:block absolute h-[825px] w-[825px] left-center bottom-[300px] blur-[200px] bg-[#602A9A] z-[-10] rounded-[50%]"
+          class="hidden md:block absolute h-[825px] w-[825px] left-center bottom-[3a00px] blur-[200px] bg-[#602A9A] z-[-10] rounded-[50%]"
         ></div>
         <div
           class="hidden md:block absolute h-[569px] w-[569px] left-center bottom-[200px] blur-[200px] bg-[#602A9A] z-[-11] rounded-[50%]"
@@ -353,20 +354,99 @@
               alt=""
             />
             <div class="flex flex-col text-inter">
-              <h4>SEO goal setting</h4>
               <p class="text-[#FFFFFF70]">
+                <h4>SEO goal setting</h4>
                 Helps you set and achieve SEO goals with guided assistance.
               </p>
             </div>
           </div>
         </div>
       </section>
+      <section class="pl-[50px] text-white py-[76px] w-full md:px-[50px] bg-gradient-to-br from-[#190D2E] from-10% to-90% to-[#000000] ">
+        <div>
+          <h2 class="text-[25px] md:text-[56pt] leading-[85px] lea text-inter mb-[40px]">Elevate your <br class="hidden md:block"> SEO efforts.</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[60px] ">
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+            <div class="max-w-[259px] flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]" ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
+                </svg>
+                <h4 class="text-inter text-[#FFFFFF]">User-friendly dashboard</h4>
+              </div>
+              <p class="text-inter text-[#FFFFFF70]">Perform complex SEO audits and optimizations with a single click.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--seçao 4-->
       <section
-        class="flex-col flex-wrap justify-center items-center align-center bg-black text-white md:py-[78px] md:px-[90px] gap-[28px]"
+        class="flex-col flex-wrap justify-center items-center align-center bg-black text-white py-[78px] md:px-[90px] gap-[28px]"
       >
         <div
-          class="flex flex-col flex-wrap items-center justify-center gap-[10] mb:gap-[20px] mb-[100px]"
+          class="flex flex-col flex-wrap items-center justify-center gap-[10] mb:gap-[20px] mb-[200px]"
         >
           <h2
             class="font-inter font-[500] text-[26px] leanding-[65px] tracking-[-1.5%] text-center"
@@ -376,25 +456,28 @@
           <p
             class="font-inter font-[400] text-[18px] leanding-[31px] tracking-[-0.01%] text-center"
           >
-            Hear firsthand how our solutions have<br />boosted online success
+            Hear firsthand how our solutions have<br/>boosted online success
             for users like you.
           </p>
         </div>
         <div
-          class="flex flex-wrap justify-center align-center items-center py-[0px]"
+          class="flex flex-wrap flex-col lg:flex-row items-center justify-center py-[0px]"
         >
         
           <div
             class="p-[0px] flex justify-center relative align-center items-center mt-[-80px] mb-[-80px]"
           >
-          
-          <div class="absolute top-[0px]">
+          <div class="absolute w-[40dvw] h-[40dvw] md:left-[15px] lg:left-[-30px] md:w-[30dvw] md:h-[50%] blur-[100px] lg:blur-[150px] lg:w-[15dvw] lg:h-[15dvw] rounded-[50%] bg-[#8C45FF]">
+
+          </div>
+          <div class="absolute left-[-15dvw] top-[0px] BottomLineDiv">
             <svg
-              width="990"
-              height="1"
+              width="990px"
+              height="1px"
               viewBox="0 0 990 1"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="BottomLineSvg"
             >
               <line
                 opacity="0.6"
@@ -427,6 +510,7 @@
                 viewBox="0 0 1 401"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                
               >
                 <line
                   opacity="0.6"
@@ -456,13 +540,15 @@
             <div class="flex justify-center align-center">
               <img src="public/image/Avatar.png" alt="" srcset="" />
             </div>
-            <div class="absolute bottom-[0px]">
+            <div class="absolute  bottom-[0px] BottomLineDiv">
               <svg
-                width="990"
-                height="1"
                 viewBox="0 0 990 1"
+                height="1"
+                width="990"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                class="BottomLineSvg"
+
               >
                 <line
                   opacity="0.6"
@@ -495,6 +581,7 @@
                 viewBox="0 0 1 401"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                class=""
               >
                 <line
                   opacity="0.6"
@@ -522,31 +609,85 @@
               </svg>
             </div>
           </div>
+          <div class="flex flex-col lg:ml-[30px] mt-[140px] lg:mt-0 z-[20]">
           <h3
-        class="font-inter ml-[30px] w-[300px] font-[500] text-[23px] leanding-[34px] tracking-[-0.01%] text-left "
+        class="font-inter text-center lg:text-left w-[300px] font-[500] text-[23px] leanding-[34px] tracking-[-0.01%] text-left "
       >
         ”This product has completely transformed how I manage my projects
         and deadlines”
       </h3>
-          
-          </div>
+          <p class="font-inter text-center lg:text-left font-[400] text-[16px]  mt-[18px] mb-[5px] leanding-[26px] tracking-[-0.01%]">Talia Taylor</p>
+          <p class="font-[400] text-center lg:text-left font-inter text-[14px] leanding-[26px] tracking-[-0,01%] text-[#FFFFFF70]">Digital Marketing Director @ Quantum</p>
+        </div>  
+        </div>
         </div>
       </section>
-      <section class="bg-black text-white py-[76px] md:px-[50px]">
-        <h2 class="text-[56px] text-inter">Elevate your <br> SEO efforts.</h2>
-        <div class="grid grid-cols-3">
-          <div class="max-w-[259px]">
-            <div class="flex " ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z" fill="white"/>
-              </svg>
-              <h4>User-friendly dashboard</h4>
-            </div>
-            <p>Perform complex SEO audits and optimizations with a single click.</p>
-          </div>
+    <!--seçao 5-->
+      <section class="mt-[100px] bg-black text-white flex flex-col flex-wrap justify-center align-center items-center">
+        <div class="gap-[40px] flex flex-col flex-wrap justify-center align-center items-center mb-[80px]">
+          <h2 class="font-inter font-[500] text-[26px] md:text-[56px] leanding-[65px] tracking-[-1.5%] text-center">Pricing</h2>
+          <h3 class="font-inter font-[400] text-[18px] md:text-[20px] leanding-[31px] tracking-[-0.01%] text-center">Choose the right plan to meet your SEO<br>needs and start optimizing today.</h3>
         </div>
+        <!--tdos os cards-->
+       <div class="flex flex-wrap justify-center align-center items-center gap-[10px]">
+        <!--1 card-->
+        <div class="flex flex-col flex-wrap pt-[20px] pl-[20px] justify-start align-start items-start w-[307px] h-[500px] rounded-[10px] border-[1px] border-[#FFFFFF15] bg-[#000000] bg-opacity-6">
+          <div class="flex flex-col flex-wrap gap-[40px]">
+            <div class="gap-[6px] flex flex-col flex-wrap justify-start align-start items-start">
+              <h3 class="font-inter font-[400] text-[24px] leanding-[31px] tracking-[-0.04%]">Pricing</h3>
+              <p class="font-inter font-[400] text-[16px] leanding-[26px] tracking-[-0.0] text-[#FFFFFF70]">$29/mo</p>
+            </div>
+            <div class="flex flex-col justify-start align-start items-start">
+              <ol class="flex flex-col gap-[5px] py-[10px]">
+               <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%]  gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+              </ol>
+            </div>
+          </div>
+        </div> <!--final do card 1-->
+        <!--card 2-->
+        <div class="flex flex-col flex-wrap pt-[20px] pl-[20px] justify-start align-start items-start w-[307px] h-[500px] rounded-[10px] border-[1px] border-[#FFFFFF15] bg-[#000000] bg-opacity-6">
+          <div class="flex flex-col flex-wrap gap-[40px]">
+            <div class="gap-[6px] flex flex-col flex-wrap justify-start align-start items-start">
+              <h3 class="font-inter font-[400] text-[24px] leanding-[31px] tracking-[-0.04%]">Pricing</h3>
+              <p class="font-inter font-[400] text-[16px] leanding-[26px] tracking-[-0.0] text-[#FFFFFF70]">$29/mo</p>
+            </div>
+            <div class="flex flex-col justify-start align-start items-start">
+              <ol class="flex flex-col gap-[5px] py-[10px]">
+               <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%]  gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+              </ol>
+            </div>
+          </div>
+        </div><!--final do card 2-->
+        <!--card 3-->
+        <div class="flex flex-col flex-wrap pt-[20px] pl-[20px] justify-start align-start items-start w-[307px] h-[500px] rounded-[10px] border-[1px] border-[#FFFFFF15] bg-[#000000] bg-opacity-6">
+          <div class="flex flex-col flex-wrap gap-[40px]">
+            <div class="gap-[6px] flex flex-col flex-wrap justify-start align-start items-start">
+              <h3 class="font-inter font-[400] text-[24px] leanding-[31px] tracking-[-0.04%]">Pricing</h3>
+              <p class="font-inter font-[400] text-[16px] leanding-[26px] tracking-[-0.0] text-[#FFFFFF70]">$29/mo</p>
+            </div>
+            <div class="flex flex-col justify-start align-start items-start">
+              <ol class="flex flex-col gap-[5px] py-[10px]">
+               <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%] gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+                <li class="font-inter font-[400] text-[14px] leanding-[26px] tracking-[-0.01%]  gap-[5px] py-[10px] "><i class="fa-solid fa-check h-[15px] w-[15px]"></i>Keyword optimization</li>
+              </ol>
+            </div>
+          </div>
+        </div><!--final do 3-->
+       </div>
       </section>
     </main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/bf3adf90d9.js" crossorigin="anonymous"></script>
     <script src="./public/js/menu.js"></script>
+    <script src="./public/js/menu.js"></script>
+    <script src="./public/js/LineResize.js"></script>
   </body>
 </html>
