@@ -51,7 +51,8 @@ body {
   }
 }
 #shadowButton {
-  box-shadow: inset 0px 0px 10px 1px #ffffff60;
+  box-shadow: inset 0px 0px 6px 3px #ffffff25;
+  backdrop-filter: blur(14px);
 }
 @media (max-width: 500px) {
   .default {
